@@ -46,6 +46,8 @@ def sort_data():
 
                 likes = i.get('likes').get('count')
                 text = i.get('text')
+                if text == "":
+                    text = "Просто мемасик"
                 attachments = i.get('attachments')
                 try:
                     for i in attachments:
